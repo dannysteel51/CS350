@@ -320,7 +320,7 @@ void TickFct_PollSetPoint()
             btn_WarmFlag = 0;   // Lower flag
             btn_CoolFlag = 0;   // Lower flag
             break;
-        case PS_Decrease: // Lower setPoint 1°C, Poll SetPoint Buttons
+        case PS_Decrease: // Lower setPoint 1Â°C, Poll SetPoint Buttons
             if(setPoint_g > 0) {   // Minimum setPoint is 0
                 --setPoint_g;
             }
@@ -329,7 +329,7 @@ void TickFct_PollSetPoint()
             btn_WarmFlag = 0;   // Lower flag
             btn_CoolFlag = 0;   // Lower flag
             break;
-        case PS_Increase: // Raise setPoint 1°C, Poll SetPoint Buttons
+        case PS_Increase: // Raise setPoint 1Â°C, Poll SetPoint Buttons
             if(setPoint_g < 99) {   // Maximum setPoint is 99
                 ++setPoint_g;
             }
